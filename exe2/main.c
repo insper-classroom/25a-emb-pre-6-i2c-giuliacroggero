@@ -13,6 +13,7 @@
 const int I2C_CHIP_ADDRESS = 0x68;
 const int I2C_SDA_GPIO = 20;
 const int I2C_SCL_GPIO = 21;
+const int INT_ENABLE_REG = 0x38;
 
 void i2c_task(void *p) {
     i2c_init(i2c_default, 400 * 1000);
